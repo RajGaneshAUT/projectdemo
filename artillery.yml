@@ -1,0 +1,8 @@
+config:
+  target: http://commitquality.com
+  engines:
+    playwright: {}
+  processor: './tests/artillery/login.js'
+scenarios:
+  - engine: playwright
+    testFunction: "ArtilleryScript"
